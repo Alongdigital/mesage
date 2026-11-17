@@ -1,0 +1,276 @@
+
+/* =================================
+   ALONGDIGITAL AUTHENTICATION
+   SIGNUP PAGE STYLESHEET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #080f1e;
+    --card: #111c30;
+    --input: #0b1527;
+    --primary: #3978f6;
+    --primary-hover: #2864df;
+    --text: #f1f5ff;
+    --muted: #94a3b8;
+    --border: #293a55;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* MAIN CONTAINER */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 16px;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(57, 120, 246, 0.13),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(14, 165, 233, 0.10),
+            transparent 40%
+        ),
+        var(--bg);
+}
+
+/* SIGNUP CARD */
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 38px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    animation: cardEnter 0.6s ease;
+}
+
+/* BRAND */
+
+.brand {
+    color: #60a5fa;
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    margin-bottom: 27px;
+}
+
+/* HEADER */
+
+.auth-header {
+    margin-bottom: 30px;
+}
+
+.auth-header h1 {
+    font-size: 29px;
+    font-weight: 750;
+    margin-bottom: 9px;
+}
+
+.auth-header p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 9px;
+    color: #dce7f8;
+}
+
+/* INPUT FIELDS */
+
+.form-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 14px;
+    background: var(--input);
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    outline: none;
+    color: var(--text);
+    font-size: 14px;
+    transition: border 0.25s, box-shadow 0.25s;
+}
+
+.form-group input::placeholder {
+    color: #71819b;
+}
+
+.form-group input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(57, 120, 246, 0.13);
+}
+
+/* TERMS */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 22px 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.terms input {
+    margin-top: 3px;
+    accent-color: var(--primary);
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+.terms a,
+.auth-footer a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.terms a:hover,
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* SUBMIT BUTTON */
+
+.submit-btn {
+    width: 100%;
+    height: 49px;
+    border: none;
+    border-radius: 9px;
+    background: var(--primary);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(57, 120, 246, 0.22);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* FOOTER */
+
+.auth-footer {
+    margin-top: 27px;
+    text-align: center;
+}
+
+.auth-footer p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.auth-footer p a {
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+/* ADMIN LOGIN */
+
+.admin-login {
+    border-top: 1px solid var(--border);
+    margin-top: 24px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.admin-login span {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.admin-login a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* ANIMATION */
+
+@keyframes cardEnter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .auth-container {
+        padding: 20px 13px;
+    }
+
+    .auth-card {
+        padding: 27px 21px;
+        border-radius: 15px;
+    }
+
+    .auth-header h1 {
+        font-size: 25px;
+    }
+
+    .brand {
+        font-size: 19px;
+    }
+
+}
+
+/* SMALL DEVICES */
+
+@media (max-width: 350px) {
+
+    .auth-card {
+        padding: 23px 16px;
+    }
+
+    .auth-header h1 {
+        font-size: 23px;
+    }
+
+      }
+  
