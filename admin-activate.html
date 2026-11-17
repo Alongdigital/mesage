@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080f1e">
+
+    <title>Admin Activation | AlongDigital</title>
+
+    <link rel="stylesheet" href="admin-activate.css">
+</head>
+
+<body>
+
+<main class="auth-container">
+
+    <section class="auth-card">
+
+        <header class="auth-header">
+
+            <div class="brand">AlongDigital</div>
+
+            <h1>Activate Admin Account</h1>
+
+            <p>
+                Enter your approval credentials to create
+                your administrator account.
+            </p>
+
+        </header>
+
+        <form id="adminActivationForm">
+
+            <div class="form-group">
+                <label for="email">Registered Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter approved email address"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="activationCode">Activation Code</label>
+                <input
+                    type="text"
+                    id="activationCode"
+                    placeholder="Enter your unique activation code"
+                    autocomplete="one-time-code"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="adminId">Preferred Admin ID</label>
+                <input
+                    type="text"
+                    id="adminId"
+                    placeholder="Create your Admin ID"
+                    autocomplete="username"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Create Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a strong password"
+                    autocomplete="new-password"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm your password"
+                    autocomplete="new-password"
+                    required
+                >
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="adminTerms" required>
+                <label for="adminTerms">
+                    I agree to follow the administrator
+                    security policies and responsibilities.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Activate Admin Account
+            </button>
+
+        </form>
+
+        <div class="auth-footer">
+            <p>
+                Already activated?
+                <a href="admin-login.html">Admin Login</a>
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="admin-activate.js"></script>
+
+</body>
+                  </html>
+                  
