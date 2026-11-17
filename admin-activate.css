@@ -1,0 +1,58 @@
+
+/* =====================================
+   ADMIN ACTIVATION PAGE
+===================================== */
+
+#adminActivationForm .form-group {
+    margin-bottom: 19px;
+}
+
+#adminActivationForm input:not([type="checkbox"]) {
+    width: 100%;
+    height: 49px;
+    padding: 0 14px;
+    background: #0b1527;
+    border: 1px solid #293a55;
+    border-radius: 9px;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+#adminActivationForm input:focus {
+    border-color: #3978f6;
+    box-shadow: 0 0 0 3px rgba(57,120,246,0.13);
+}
+
+#adminActivationForm input::placeholder {
+    color: #71819b;
+}
+
+#adminActivationForm .submit-btn {
+    width: 100%;
+    height: 49px;
+    border: none;
+    border-radius: 9px;
+    background: #3978f6;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#adminActivationForm .submit-btn:hover {
+    background: #2864df;
+    transform: translateY(-2px);
+}
+
+#adminActivationForm .terms {
+    margin: 20px 0;
+}
+
+@media(max-width: 480px) {
+    #adminActivationForm .form-group {
+        margin-bottom: 16px;
+    }
+}
