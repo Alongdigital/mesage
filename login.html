@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#080f1e">
+
+    <title>Login | AlongDigital</title>
+
+    <link rel="stylesheet" href="login.html">
+
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <!-- HEADER -->
+
+            <header class="auth-header">
+
+                <div class="brand">AlongDigital</div>
+
+                <h1>Welcome Back!</h1>
+
+                <p>
+                    Login to access your account and workspace.
+                </p>
+
+            </header>
+
+
+            <!-- LOGIN FORM -->
+
+            <form id="loginForm">
+
+                <div class="form-group">
+
+                    <label for="loginId">
+                        User ID or Email Address
+                    </label>
+
+                    <input
+                        type="text"
+                        id="loginId"
+                        placeholder="Enter your User ID or Email"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- FORGOT PASSWORD -->
+
+                <div class="forgot-password">
+
+                    <a href="forgot-password.html">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- REMEMBER ME -->
+
+                <div class="remember-me">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            id="rememberMe"
+                        >
+
+                        Remember me
+                    </label>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="submit-btn"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- SIGNUP REDIRECT -->
+
+            <div class="auth-footer">
+
+                <p>
+                    Don't have an account?
+
+                    <a href="index.html">
+                        Sign Up
+                    </a>
+
+                </p>
+
+
+                <!-- ADMIN LOGIN -->
+
+                <div class="admin-login">
+
+                    <span>Administrator access?</span>
+
+                    <a href="admin-login.html">
+                        Admin Login →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+
+  </html>
+  
