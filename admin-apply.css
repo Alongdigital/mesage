@@ -1,0 +1,58 @@
+
+/* =====================================
+   ADMIN APPLICATION PAGE
+===================================== */
+
+#adminApplicationForm .form-group {
+    margin-bottom: 21px;
+}
+
+#adminApplicationForm input {
+    width: 100%;
+    height: 49px;
+    padding: 0 14px;
+    background: #0b1527;
+    border: 1px solid #293a55;
+    border-radius: 9px;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+    transition: 0.25s ease;
+}
+
+#adminApplicationForm input:focus {
+    border-color: #3978f6;
+    box-shadow: 0 0 0 3px rgba(57,120,246,0.13);
+}
+
+#adminApplicationForm input::placeholder {
+    color: #71819b;
+}
+
+#adminApplicationForm input[type="date"] {
+    color-scheme: dark;
+}
+
+#adminApplicationForm .submit-btn {
+    width: 100%;
+    height: 49px;
+    background: #3978f6;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#adminApplicationForm .submit-btn:hover {
+    background: #2864df;
+    transform: translateY(-2px);
+}
+
+@media(max-width: 480px) {
+    #adminApplicationForm .form-group {
+        margin-bottom: 18px;
+    }
+      }
